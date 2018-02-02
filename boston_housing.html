@@ -11791,7 +11791,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入此项目所需要的库</span>
@@ -11818,7 +11818,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入波士顿房屋的数据集</span>
@@ -11871,7 +11871,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#找到并查看要用的数据</span>
@@ -11968,7 +11968,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#将要用的数据提取出来</span>
@@ -12052,7 +12052,7 @@ Name: MEDV, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#TODO 1</span>
@@ -12103,6 +12103,67 @@ Maximum price: $1,024,800.00
 Mean price: $454,342.94
 Median price $438,900.00
 Standard deviation of prices: $165,340.28
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#TODO 1 第二次提交使用numpy计算</span>
+
+<span class="c1">#目标：计算价值的最小值</span>
+
+<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+
+<span class="c1">#目标：计算价值的最大值</span>
+<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+
+<span class="c1">#目标：计算价值的平均值</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+
+<span class="c1">#目标：计算价值的中值</span>
+<span class="n">median_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+
+<span class="c1">#目标：计算价值的标准差</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+
+<span class="c1">#目标：输出计算的结果</span>
+<span class="k">print</span> <span class="s2">&quot;Statistics for Boston housing dataset:</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="k">print</span> <span class="s2">&quot;Minimum price: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minimum_price</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Maximum price: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">maximum_price</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Mean price: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mean_price</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Median price ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">median_price</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Standard deviation of prices: ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">std_price</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Statistics for Boston housing dataset:
+
+Minimum price: $105,000.00
+Maximum price: $1,024,800.00
+Mean price: $454,342.94
+Median price $438,900.00
+Standard deviation of prices: $165,171.13
 </pre>
 </div>
 </div>
@@ -13125,7 +13186,7 @@ GYZhGJXBRMkwDMOoDCZKhmEYRmUwUTIMwzAqg4mSYRiGURn+P5qJ28caE8QHAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#22238;&#31572;:">&#22238;&#31572;:<a class="anchor-link" href="#&#22238;&#31572;:">&#194;&#182;</a></h3><p>a.可以用测试集回测算法的学习情况和性能，可以用来评估模型。
-b.如果用已见过的数据进行测试，那么准确率必然很高。如果没有数据对模型进行测试，就没有办法验证模型，也难以发现过拟合或欠拟合现象。</p>
+b.如果没有数据对模型进行测试，就没有办法验证模型，也难以发现过拟合或欠拟合现象。如果使用已见过的数据对模型进行测试，这个模型就是通过这组数据训练出来的，没办法用得到的结果判断模型的好坏，最好使用没有见过的数据比较有说服力。</p>
 
 </div>
 </div>
@@ -14337,6 +14398,7 @@ P/GAWMWFAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#38382;&#39064;-4---&#22238;&#31572;:">&#38382;&#39064; 4 - &#22238;&#31572;:<a class="anchor-link" href="#&#38382;&#39064;-4---&#22238;&#31572;:">&#194;&#182;</a></h3><p>训练集的曲线评分随着训练的增加逐步趋于平缓，验证集曲线也会逐渐趋近于训练集曲线，逐步收敛趋于平缓。当曲线达到一定收敛程度和稳定程度时，继续增加训练集不会提升模型表现。</p>
+<h3 id="&#20108;&#27425;&#25552;&#20132;">&#20108;&#27425;&#25552;&#20132;<a class="anchor-link" href="#&#20108;&#27425;&#25552;&#20132;">&#194;&#182;</a></h3><p>如最大深度为3时，训练和测试的评分基本都趋近于0.8，并且保持相对稳定，可见即使继续增加训练模型数据也基本不会提升模型表现了。</p>
 
 </div>
 </div>
@@ -14889,9 +14951,10 @@ qvw/RVsFU5YhEhwAAAAASUVORK5CYII=
 <h3 id="&#38382;&#39064;-7---&#22238;&#31572;:">&#38382;&#39064; 7 - &#22238;&#31572;:<a class="anchor-link" href="#&#38382;&#39064;-7---&#22238;&#31572;:">&#194;&#182;</a></h3><ul>
 <li><p>网格搜索算法是一种通过遍历给定的参数组合来优化模型表现的算法,指定参数值进行穷举搜索。</p>
 </li>
-<li><p>将各个参数可能的取值进行排列组合，列出所有可能的组合结果生成“网格”。然后将各组合用于SVM训练，并使用交叉验证对表现进行评估。在拟合函数尝试了所有的参数组合后，返回一个合适的分类器，自动调整至最佳参数组合，对每一组数据进行跟踪评分，选择评分最高的组，作为最优解。</p>
+<li><p>将各个参数可能的取值进行排列组合，列出所有可能的组合结果生成“网格”。然后将各组合用于SVM训练，并使用交叉验证对表现进行评估。在拟合函数尝试了所有的参数组合后，返回一个合适的分类器，自动调整至最佳参数组合，对每一组数据进行跟踪评分，选择合适的结果，作为最优解。</p>
 </li>
 </ul>
+<p>SVM指支持向量机，是一个有监督的学习模型，通常用来进行模式识别、分类以及回归分析。本项目中包含测试集和训练集。</p>
 
 </div>
 </div>
@@ -14916,10 +14979,12 @@ qvw/RVsFU5YhEhwAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#38382;&#39064; 8 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#194;&#182;</a></h3><ul>
-<li>K折交叉验证法是将训练集中的数据分成k分（一般取k=10），取第k份作为验证集，其他所有k-1份作为训练集，用第k份数据来评分。可以用来预测模型性能。</li>
-<li>GridSearchCV根据你给定的模型自动进行交叉验证，通过调节每一个参数来跟踪评分结果，实际上，该过程代替了进行参数搜索时的for循环过程.在尝试所有组合后，对每组数据进行跟踪评分，从而选择一组最佳参数组合作为最优解。而其通过调节其cv参数来实现与较差验证来实现最佳参数的选择，best<em>params</em>属性查看最优解。</li>
-<li>交叉验证的结果。</li>
-<li>网格搜索不使用交叉验证，使训练速度更快，但是难以找到到最优的模型参数；交叉验证对每一个参数组合得出的评分更为准确和鲁棒，提高评估的稳定性。</li>
+<li>K折交叉验证法是将训练集中的数据分成k分（一般取k=10），取第k份作为验证集，其他所有k-1份作为训练集，依次类推训练10次验证十次，得到十个分数，取平均值就是深度1的决策模型最终分数。深度2、深度3、深度4、以此类推。可以用来预测模型性能。</li>
+<li>GridSearchCV根据你给定的模型自动进行交叉验证，参数列表和参数值组成参数组合，实际上，该过程代替了进行参数搜索时的for循环过程.在尝试所有组合后，对每组数据进行跟踪评分，从而选择一组最佳参数组合作为最优解。而其通过调节其cv参数来实现与较差验证来实现最佳参数的选择，best<em>params</em>属性查看最优解。</li>
+<li><p>交叉验证的结果。返回的是一个字典包含相关参数的名称以及对应的值</p>
+</li>
+<li><p>网格搜索不使用交叉验证，使训练速度更快，但是难以找到到最优的模型参数；交叉验证对每一个参数组合得出的评分更为准确和鲁棒，提高评估的稳定性。</p>
+</li>
 </ul>
 
 </div>
